@@ -4,20 +4,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
-#navbar {
-  overflow: hidden;
-  background-color: rgb(230, 230, 230);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 6vh;
-}
-ul {
-  margin-top: 11px;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-}
+
 a {
   text-decoration: none;
   color: black;
@@ -25,9 +12,9 @@ a {
   font-size: 1.3em;
 }
 #welcome-section {
-  height: 60vh;
+  height: 65vh;
   text-align: center;
-  padding-top: 40vh;
+  padding-top: 35vh;
 }
 .subtitle {
   text-align: center;
@@ -59,8 +46,55 @@ a {
   width: 100px;
   padding: 20px;
 }
-@media (max-width: 700px) {
-  #navbar {
-    height: 0px;
-  }
+#first {
+  -webkit-animation: fadein 1.5s;
+  -moz-animation: fadein 1.5s;
+  -ms-animation: fadein 1.5s;
+  -o-animation: fadein 1.5s;
+  animation: fadein 1.5s;
+  animation-timing-function: ease-in;
+}
+#second {
+  opacity: 0;
+  -webkit-animation: fadein 1.5s;
+  -moz-animation: fadein 1.5s;
+  -ms-animation: fadein 1.5s;
+  -o-animation: fadein 1.5s;
+  animation: fadein 1.5s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+#third {
+  opacity: 0;
+  -webkit-animation: fadein 1.5s;
+  -moz-animation: fadein 1.5s;
+  -ms-animation: fadein 1.5s;
+  -o-animation: fadein 1.5s;
+  animation: fadein 1.5s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
