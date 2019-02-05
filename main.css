@@ -12,9 +12,9 @@ a {
   font-size: 1.3em;
 }
 #welcome-section {
-  height: 65vh;
+  height: 40vh;
   text-align: center;
-  padding-top: 35vh;
+  padding-top: 15vh;
 }
 .subtitle {
   text-align: center;
@@ -75,9 +75,22 @@ a {
   animation-delay: 3s;
   animation-fill-mode: forwards;
     animation-timing-function: ease-in;
-
 }
-
+#bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+#cv {
+  margin-left: 20%;
+}
+#contact {
+  margin-right: 20%;
+}
+#cv-icon {
+  width: 150px;
+  height: 150px;
+}
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
